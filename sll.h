@@ -13,3 +13,5 @@ typedef struct {
 } sll_t;
 
 sll_t *sll_init(size_t type_size);
+
+void sll_add(sll_t *sll, void *value);
