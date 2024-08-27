@@ -1,8 +1,8 @@
 CC=clang
-CFLAGS=-Wall -Wextra
+CFLAGS=-Wall -Wextra -g
 OBJS=sll.o
 
-all: $(OBJS)
+all: clean $(OBJS)
 	$(CC) $(CFLAGS) $(OBJS) main.c -o main
 
 sll.o:
@@ -10,5 +10,4 @@ sll.o:
 
 clean:
 	rm -f *.o
-	rm -f *.a
-	rm -f test
+	rm -f main
