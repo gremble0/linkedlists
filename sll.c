@@ -52,3 +52,13 @@ void *sll_get(sll_t *sll, size_t index) {
 
   return cur_node->value;
 }
+
+void sll_print(sll_t *sll) {
+  assert(sll->first != NULL);
+
+  sll_node_t *cur_node = sll->first;
+  do {
+    cur_node = cur_node->next;
+    printf("%p\n", cur_node);
+  } while (cur_node != sll->first);
+}

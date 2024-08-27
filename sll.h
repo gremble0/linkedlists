@@ -18,3 +18,5 @@ sll_t *sll_init(size_t type_size);
 void sll_add(sll_t *sll, void *value);
 
 void *sll_get(sll_t *sll, size_t index);
+
+void sll_print(sll_t *sll);
