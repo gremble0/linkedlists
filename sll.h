@@ -4,9 +4,12 @@
 
 typedef struct sll_node_t {
   struct sll_node_t *next;
-  char is_last;
+  void *value;
 } sll_node_t;
 
 typedef struct {
   sll_node_t *first;
+  size_t type_size;
 } sll_t;
+
+sll_t *sll_init(size_t type_size);

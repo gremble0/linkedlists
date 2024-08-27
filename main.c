@@ -2,4 +2,4 @@
 
 #include "sll.h"
 
-int main(void) { printf("hello, world\n"); }
+int main(void) { sll_t *sll = sll_init(sizeof(int)); }
