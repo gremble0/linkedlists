@@ -7,9 +7,9 @@ typedef struct sll_node_t {
   void *value;
 } sll_node_t;
 
+// A singly linked circular linked list with no last pointer
 typedef struct {
   sll_node_t *first;
-  sll_node_t *last;
   size_t type_size;
 } sll_t;
 
